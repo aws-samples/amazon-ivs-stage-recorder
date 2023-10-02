@@ -1,11 +1,15 @@
-## My Project
+# IVSStageSaver
 
-TODO: Fill this README out!
+This application demonstrates how video can be saved from an IVS Stages.
 
-Be sure to:
+IVS Stages supports the [WHEP](https://www.ietf.org/archive/id/draft-murillo-whep-02.html) protocol. This allows any
+WebRTC client to easily push or pull video to a IVS Stage.
 
-* Change the title in this README
-* Edit your repository description on GitHub
+### Using
+This program requires a Token (used to authenticate) and a Participant ID (the video you wish to download).
+When you have those two values run the program like so.
+
+`go run . $TOKEN $PARTICIPANT_ID`
 
 ## Security
 
