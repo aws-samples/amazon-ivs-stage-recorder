@@ -28,10 +28,6 @@ func writeRTPPacketsToMKV(s *samplebuilder.SampleBuilder, track *webrtc.TrackRem
 				break
 			}
 
-			if track.Kind() == webrtc.RTPCodecTypeAudio {
-				fmt.Println("write")
-			}
-
 			totalDuration += sample.Duration
 			if _, err := blockWriter.Write(true, int64(totalDuration/time.Millisecond), sample.Data); err != nil {
 				panic(err)
